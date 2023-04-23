@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500&display=swap" rel="stylesheet">
+    
+    <style>
+      .bg-img {
+        background-image: url("https://img.freepik.com/free-vector/watercolor-world-art-day-background_23-2149327049.jpg?t=st=1675753115~exp=1675753715~hmac=f616a1a4cd011e3a24bdc497fa5ff078be0da8ce696559d4299e1dcdec2b14f7");
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .name {
+        color: rgb(69, 37, 37);
+        font-size: 80px;
+        font-weight: bold;
+        text-decoration: wavy;
+        text-align: center;
+        margin-top: 50px;
+        font-family: "Newsreader", serif;
+      }
+      .name:hover{
+        /* transform: ; */
+        transform: scale(10px);
+      }
+      .about-section {
+        color: rgb(4, 4, 4);
+        font-size: 40px;
+        font-weight: bold;
+
+        text-align: center;
+        margin-top: 50px;
+        font-family: "Sacramento", cursive;
+      }
+      .mad, .madd, .mady {
+        color: brown;
+        font-weight: bold;
+
+        transition: transform 0.5s ease;
+        display: inline-block;
+        position: relative;
+        padding: 10px;
+      }
+
+      .mad:hover, .madd:hover, .mady:hover {
+        color: rgb(81, 0, 255);
+        transform: translateY(20px);
+
+      }
+      .ani{
+  width: 300px;
+  height: 100px;
+  /* background-color: rgba(255, 49, 53, 0.593); */
+  font-weight: bold;
+  font-size: 50px; ;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+.ani:hover{
+  font-size: 55px;
+  color: blue;
+}
+
+#div2 {animation-timing-function: ease;}
+
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 700px;}
+      /* .mad{
+        color: #c90c02;
+        /* transform: translateY(50px); */
+      
+      /* } */
+/* .a.mad:hover {
+        color: hsl(215, 100%, 50%);
+        transform: translateY(100%);
+      }
+      .mad{
+        transition: 0.5 ease;
+        color: #ff0000;
+      }
+      .mad:hover { 
+        color: hsl(215, 100%, 50%);
+        transform: translateY(100%);
+       }  */
+
+       /* CSS link color (red) */
+      /* .link:hover {
+        transform: translateY(50px);
+        color: #00134da6; */
+      
+       /* CSS link hover (green) */
+      /* .link:active{color:rgb(255, 0, 0)} */
+      
+     
+      }
+    </style>
+
+    <title> MADDY'S ART STUDIO</title>
+  </head>
+  <body>
+    <div class="bg-img d-flex align-items-center">
+      <div class="container">
+        <h1 class="name">MADDY'S ART STUDIO</h1>
+        <div class="about-section">
+          <p>
+            Hi! I'm Maddy, an artist with a passion for telling stories through my paintings. Take a look
+            at my portfolio to see some of my work, and don't hesitate to ping me on instagram for paid artworks
+          </p>
+
+          <div> 
+            <a class="mad" href="{% url 'home' %}">Home </a> &nbsp &nbsp &nbsp 
+            <a class="madd" href="{% url 'painting' %}">Paintings</a> &nbsp &nbsp &nbsp  
+            <a class="mady" href="https://www.instagram.com/panglossiann_/" target="_blank">Instagram</a>  
+          </div>
+           
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+
+
+          <p class="ani" id="div2"> Arts for Sale  </p>
+
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
